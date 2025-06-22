@@ -35,6 +35,7 @@ body main .mainvisual {
 }
 body main section {
   max-width: 960px;
+  padding: 0 4%;
   box-sizing: border-box;
   text-align: center;
   margin: 0 auto;
@@ -68,11 +69,12 @@ body main section .introduction-containar #about-icon {
 }
 body main section .introduction-containar .introduction {
   width: 403px;
+  text-align: left;
 }
 body main section .introduction-containar .introduction .name {
   font-size: 16px;
   color: #383E45;
-  margin-bottom: 10px;
+  margin: 10px 0;
   display: table;
 }
 body main section .introduction-containar .introduction p {
@@ -86,7 +88,7 @@ body main .content-wrapper {
   margin-bottom: 110px;
 }
 body main .content-wrapper .content {
-  max-width: 263px;
+  max-width: 100%;
   box-sizing: border-box;
 }
 body main .content-wrapper .content img {
@@ -106,4 +108,17 @@ body main .content-wrapper .content p {
 body footer {
   font-size: 10px;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  main section .introduction-containar {
+    flex-direction: column;
+  }
+  main section .introduction-containar #about-icon {
+    margin: 0 0 0 30px;
+  }
+  main .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 }/*# sourceMappingURL=mian.css.map */

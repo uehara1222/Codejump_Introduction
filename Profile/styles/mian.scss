@@ -43,6 +43,7 @@ body {
 
     section {
       max-width: 960px;
+      padding: 0 4%;
       box-sizing: border-box;
       text-align: center;
       margin: 0 auto;
@@ -80,11 +81,12 @@ body {
 
         .introduction {
           width: 403px;
+          text-align: left;
 
           .name {
             font-size: 16px;
             color: #383E45;
-            margin-bottom: 10px;
+            margin: 10px 0;
             display: table;
           }
 
@@ -103,7 +105,7 @@ body {
       margin-bottom: 110px;
 
       .content {
-        max-width: 263px;
+        max-width: 100%;
         box-sizing: border-box;
 
         img {
@@ -126,10 +128,32 @@ body {
     }
   }
 
-
   // footer
   footer {
     font-size: 10px;
     text-align: center;
+  }
+}
+
+// =================================
+// レスポンシブ対応_600px以下(スマホ表示)
+// =================================
+
+@media screen and (max-width: 600px) {
+  main {
+    section {
+      .introduction-containar {
+        flex-direction: column;
+
+        #about-icon {
+          margin: 0 0 0 30px;
+        }
+      }
+    }
+
+    .content-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
