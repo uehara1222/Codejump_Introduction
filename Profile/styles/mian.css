@@ -1,1 +1,128 @@
-/*# sourceMappingURL=mian.css.map */
+body {
+  margin: 0;
+}
+body header {
+  max-width: 960px;
+  height: 60px;
+  padding: 0 4%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+body header a {
+  width: 120px;
+  height: 40px;
+}
+body header a img {
+  width: 120px;
+  height: 40px;
+}
+body header ul {
+  display: flex;
+}
+body header ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+body header ul li a {
+  color: #24292E;
+  text-decoration: none;
+}
+body main .mainvisual {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 80px;
+}
+body main section {
+  max-width: 960px;
+  padding: 0 4%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+}
+body main section h2 {
+  display: table;
+  margin: 0 auto;
+  height: 48px;
+  font-size: 32px;
+  line-height: 48px;
+  border-bottom: 1px solid #383E45;
+  color: #383E45;
+}
+body main section #About {
+  margin-bottom: 70px;
+}
+body main section #Bicycle {
+  margin-bottom: 60px;
+}
+body main section .introduction-containar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+body main section .introduction-containar #about-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+body main section .introduction-containar .introduction {
+  width: 403px;
+  text-align: left;
+}
+body main section .introduction-containar .introduction .name {
+  font-size: 16px;
+  color: #383E45;
+  margin: 10px 0;
+  display: table;
+}
+body main section .introduction-containar .introduction p {
+  font-size: 14.4px;
+  color: #383E45;
+}
+body main .content-wrapper {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  margin-bottom: 110px;
+}
+body main .content-wrapper .content {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+body main .content-wrapper .content img {
+  width: 100%;
+  display: block;
+}
+body main .content-wrapper .content h3 {
+  font-size: 16px;
+  color: #383E45;
+  margin: 10px 0;
+}
+body main .content-wrapper .content p {
+  font-size: 14.4px;
+  color: #383E45;
+  margin: 0;
+}
+body footer {
+  font-size: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  main section .introduction-containar {
+    flex-direction: column;
+  }
+  main section .introduction-containar #about-icon {
+    margin: 0 0 0 30px;
+  }
+  main .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}/*# sourceMappingURL=mian.css.map */
