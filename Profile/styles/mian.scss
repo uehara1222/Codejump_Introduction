@@ -12,9 +12,14 @@ body {
     justify-content: space-between;
     margin: 0 auto;
 
-    img {
+    a {
       width: 120px;
       height: 40px;
+
+      img {
+        width: 120px;
+        height: 40px;
+      }
     }
 
     ul {
